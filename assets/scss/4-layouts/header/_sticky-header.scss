@@ -1,0 +1,12 @@
+#header.sticky {
+  background-color: $white;
+  box-shadow: $box-shadow;
+
+  .logo {
+    img {
+      width: 60%;
+      height: 60%;
+      display: inline-block;
+    }
+  }
+}

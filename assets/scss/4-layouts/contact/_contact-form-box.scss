@@ -1,0 +1,7 @@
+.contact-form-box {
+  @include grid(40rem);
+  align-items: center;
+  .contact-left {
+    width: 90%;
+  }
+}

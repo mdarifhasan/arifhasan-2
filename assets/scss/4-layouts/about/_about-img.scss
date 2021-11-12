@@ -1,0 +1,56 @@
+.about-img {
+  margin-left: auto;
+  @include flex(center, center);
+  position: relative;
+  z-index: 9;
+  .circle {
+    border: 1rem solid $secondary-color-light;
+    width: 35rem;
+    height: 35rem;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    background: $white;
+
+    img {
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    top: 3%;
+    left: 5%;
+    width: 35rem;
+    height: 35rem;
+    background: #ffac4773;
+    border-radius: 50%;
+  }
+  @include desktop {
+    order: 1;
+    margin: 2rem auto;
+    .circle {
+      width: 30rem;
+      height: 30rem;
+      border-radius: 50%;
+    }
+    &::before {
+      width: 30rem;
+      height: 30rem;
+    }
+  }
+  @include smartPhone {
+    order: 1;
+    margin: 2rem auto;
+    .circle {
+      width: 25rem;
+      height: 25rem;
+      border-radius: 50%;
+    }
+    &::before {
+      width: 25rem;
+      height: 25rem;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.toggle-menu {
+  @include flex(space-between, center);
+  cursor: pointer;
+  animation: slideDown 1s ease-in-out;
+  h3 {
+    font-size: 1.6rem;
+    text-transform: capitalize;
+    color: $primary-color;
+    font-weight: 500;
+  }
+  .toggle-bar {
+    margin-left: 1rem;
+    .bar {
+      height: 0.2rem;
+      background-color: $secondary-color;
+      margin: 0.4rem 0;
+      &:first-child {
+        width: 3.5rem;
+        background-color: $primary-color;
+      }
+      &:last-child {
+        width: 2.7rem;
+        background-color: $secondary-color;
+      }
+    }
+    &:hover .bar:last-child {
+      width: 3.5rem;
+    }
+  }
+  &.active {
+    .toggle-bar {
+      .bar {
+        &:first-child {
+          transform: rotate(45deg) translate(7px, -2px);
+        }
+        &:last-child {
+          transform: rotate(-45deg) translate(5px, 3px);
+          width: 3.5rem;
+        }
+      }
+    }
+  }
+}

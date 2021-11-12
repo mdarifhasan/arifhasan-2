@@ -1,0 +1,9 @@
+.hero {
+  @include grid(40rem);
+  align-items: center;
+  background-color: $light-bg;
+  z-index: $z-hero;
+  width: 100vw;
+}
+@import "hero-desc";
+@import "hero-img";

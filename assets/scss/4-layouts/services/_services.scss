@@ -1,0 +1,10 @@
+.section-services {
+  min-height: 90vh;
+  background-color: $light-bg;
+  position: relative;
+  @include desktop {
+    padding-bottom: 10rem;
+  }
+}
+@import "service-box";
+@import "service-desc";

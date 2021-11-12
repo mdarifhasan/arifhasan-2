@@ -1,0 +1,20 @@
+.about-desc {
+  z-index: 10;
+  h2 {
+    font-size: 6rem;
+    color: $primary-color;
+    font-weight: 800;
+  }
+  a.btn {
+    margin: 2rem 0;
+    display: inline-block;
+  }
+  @include desktop {
+    order: 2;
+    text-align: center;
+    margin-top: 2rem;
+    h2 {
+      font-size: 4rem;
+    }
+  }
+}

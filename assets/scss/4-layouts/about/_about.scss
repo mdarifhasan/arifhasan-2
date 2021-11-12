@@ -1,0 +1,9 @@
+.about {
+  @include grid(40rem);
+  padding: 5rem 9%;
+  min-height: 90vh;
+  align-items: center;
+  justify-items: space-between;
+}
+@import "about-img";
+@import "about-desc";

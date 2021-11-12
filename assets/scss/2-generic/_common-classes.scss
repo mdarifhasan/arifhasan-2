@@ -1,0 +1,69 @@
+/*---------------------------
+		Alignments
+---------------------------*/
+
+.text {
+  &-left {
+    text-align: left;
+  }
+
+  &-right {
+    text-align: right;
+  }
+
+  &-center {
+    text-align: center;
+  }
+
+  &-justify {
+    text-align: justify;
+  }
+}
+
+/*---------------------------
+		Others
+---------------------------*/
+
+.hide {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+.img {
+  width: 100%;
+}
+.container {
+  width: 160rem;
+  padding: 3rem 9%;
+  @include center-block;
+}
+
+.section-title {
+  h2 {
+    font-size: 6rem;
+    color: $primary-color;
+    text-transform: capitalize;
+    font-weight: 800;
+  }
+  h3 {
+    font-size: 1.6rem;
+    color: $text-color;
+    text-transform: capitalize;
+    font-weight: 600;
+  }
+  @include desktop {
+    h2 {
+      font-size: 5rem;
+      line-height: 1.45;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}

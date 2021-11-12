@@ -1,0 +1,12 @@
+a.logo {
+  animation: slideLeft 1s ease-in-out;
+
+  img {
+    transition: 0.3s linear;
+    width: 70%;
+  }
+  h2 {
+    text-transform: uppercase;
+    color: $primary-color;
+  }
+}

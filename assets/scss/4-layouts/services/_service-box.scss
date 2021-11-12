@@ -1,0 +1,41 @@
+.service-container {
+  @include grid(32rem);
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+  align-items: center;
+}
+.service-box {
+  min-height: 24rem;
+  box-shadow: $box-shadow-2;
+  background: $white;
+  margin: 3rem 2rem;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  z-index: $z-service;
+  background-color: $white;
+
+  .service-number {
+    font-size: 15rem;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    color: $light-bg-text;
+    animation: scaleUp 1s ease-in;
+    transform: scale(1);
+  }
+  .service-heading {
+    font-size: 3rem;
+    text-transform: capitalize;
+    color: $primary-color;
+  }
+  p {
+  }
+
+  &:hover {
+    box-shadow: $box-shadow;
+  }
+}

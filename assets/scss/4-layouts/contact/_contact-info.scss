@@ -1,0 +1,11 @@
+.contact-info {
+  @include grid(40rem);
+  min-height: 80vh;
+  .map {
+    width: 100%;
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.breadcrumb {
+  background-color: $light-bg;
+  padding: 5rem 9%;
+  background-image: background_url("ripped-paper-base.png");
+  h2 {
+    font-size: 5rem;
+    color: $primary-color;
+    text-transform: capitalize;
+    display: inline-block;
+  }
+}

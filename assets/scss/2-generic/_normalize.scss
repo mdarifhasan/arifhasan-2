@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  text-decoration: none;
+  list-style: none;
+}
+html {
+  font-size: 62.5%;
+  @include tablet {
+    font-size: 55.5%;
+  }
+  @include smartPhone {
+    font-size: 48.5%;
+  }
+}
+body,
+p,
+input {
+  font-size: 1.8rem;
+  font-family: $text-font;
+  line-height: 1.7;
+  color: $text-color;
+  font-weight: 500;
+}
+body {
+  overflow-x: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: $heading-font;
+}
+section {
+  padding: 3rem 9%;
+  @include center-block;
+}

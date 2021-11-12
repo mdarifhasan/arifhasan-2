@@ -1,0 +1,23 @@
+.fixed-social-icon {
+  position: fixed;
+  top: 50%;
+  left: -3%;
+  z-index: $z-fixed-social;
+  transform: rotate(-90deg);
+  text-align: center;
+
+  text-align: center;
+  margin: auto 0;
+  vertical-align: middle;
+
+  a {
+    img {
+      position: relative;
+      width: 3rem;
+      margin: auto 0.8rem;
+    }
+  }
+  @include desktop {
+    display: none;
+  }
+}

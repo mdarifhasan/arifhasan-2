@@ -1,0 +1,23 @@
+.portfolio-filter-menu {
+  @include flex(center, center);
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  li {
+    background-color: $primary-color;
+    margin: 0 1rem;
+    padding: 0.6rem 1.5rem;
+    cursor: pointer;
+    color: $secondary-color;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    &.active {
+      background-color: $secondary-color;
+      color: $primary-color;
+    }
+  }
+  @include tablet {
+    li {
+      margin: 1rem;
+    }
+  }
+}

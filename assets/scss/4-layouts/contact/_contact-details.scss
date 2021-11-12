@@ -1,0 +1,15 @@
+.contact-destails {
+  background-color: $primary-color;
+  padding: 3rem 0;
+  @include flex(center, center);
+  flex-direction: column;
+  border-bottom: 0.5px solid $light-bg;
+  text-align: center;
+  p {
+    color: $secondary-color;
+    font-weight: 500;
+    span {
+      font-weight: 500;
+    }
+  }
+}

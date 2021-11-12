@@ -1,0 +1,19 @@
+.newsletter-box {
+  background-color: $white;
+  border: 1px solid $primary-color;
+
+  input {
+    outline: none;
+    border: none;
+    margin: 0;
+    padding: 1rem 2.5rem;
+    background-color: transparent;
+  }
+  #newsletter-submit {
+    background-color: $primary-color;
+    color: $secondary-color;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+}

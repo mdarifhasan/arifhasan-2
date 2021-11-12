@@ -1,0 +1,44 @@
+// Center block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Grid layout
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+}
+// flexbox
+@mixin flex($justify-content, $align-items) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
+//   responsive
+@mixin largeDesktop {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media screen and (max-width: 975px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and (max-width: 780px) {
+    @content;
+  }
+}
+@mixin smartPhone {
+  @media screen and (max-width: 576px) {
+    @content;
+  }
+}
+@mixin small {
+  @media screen and (max-width: 300px) {
+    @content;
+  }
+}

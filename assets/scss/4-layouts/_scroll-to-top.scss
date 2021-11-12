@@ -1,0 +1,14 @@
+#scroll-to-top {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 1.5rem 2rem;
+  font-size: 2rem;
+  animation: bounce 2s ease-in-out infinite;
+  &:hover {
+    background-color: $secondary-color;
+    color: $primary-color;
+  }
+}

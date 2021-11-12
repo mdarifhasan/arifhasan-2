@@ -1,0 +1,5 @@
+.working-process-inside {
+  @include flex(space-evenly, center);
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}

@@ -1,0 +1,7 @@
+.portfolio-container {
+  @include flex(center, center);
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,26 @@
+.cta {
+  @include flex(space-between, center);
+  flex-wrap: wrap;
+  background-color: $primary-color;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  margin-bottom: -5rem;
+  padding: 3rem 9% 8rem;
+  h2 {
+    font-size: 5rem;
+    text-transform: capitalize;
+    color: $white;
+  }
+
+  // Responsive
+  @include tablet {
+    h2 {
+      text-align: center;
+    }
+
+    .cta-btn-box {
+      text-align: center;
+      display: block;
+      margin: 2rem auto;
+    }
+  }
+}

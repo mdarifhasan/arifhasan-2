@@ -1,0 +1,72 @@
+.contact-form {
+  .input-box {
+    position: relative;
+    margin: 2rem 0;
+    display: inline-block;
+    width: 100%;
+    label {
+      position: absolute;
+      top: 20%;
+      left: 2%;
+      cursor: text;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+    input {
+      padding: 0.5rem 1rem;
+      width: 90%;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $light-color;
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      &:focus ~ label,
+      &:not(:placeholder-shown),
+      &:not(:focus) ~ label {
+        top: -50%;
+        font-size: 1.2rem;
+        color: $primary-color;
+      }
+    }
+  }
+  .textarea-box {
+    position: relative;
+    label {
+      position: absolute;
+      top: 10%;
+      left: 2%;
+      cursor: text;
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
+    textarea {
+      width: 90%;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid $light-color;
+      font-family: $text-font;
+      font-size: 1.5rem;
+      color: $text-color;
+      font-weight: 600;
+      margin: 1.5rem 0;
+      padding: 0.5rem 1rem;
+      &:focus ~ label,
+      &:valid ~ label {
+        top: -10%;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .submit-box {
+    margin-right: 10%;
+    input[type="submit"] {
+      cursor: pointer;
+      background-color: $white;
+      color: $primary-color;
+      &:hover {
+        background-color: $primary-color;
+        color: $secondary-color;
+      }
+    }
+  }
+}
